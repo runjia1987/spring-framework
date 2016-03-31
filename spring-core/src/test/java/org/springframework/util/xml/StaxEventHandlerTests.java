@@ -29,7 +29,7 @@ public class StaxEventHandlerTests extends AbstractStaxHandlerTestCase {
 	@Override
 	protected AbstractStaxHandler createStaxHandler(Result result)
 			throws XMLStreamException {
-		XMLOutputFactory outputFactory = XMLOutputFactory.newFactory();
+		XMLOutputFactory outputFactory = XMLOutputFactory.newInstance();
 		XMLEventWriter eventWriter = outputFactory.createXMLEventWriter(result);
 		return new StaxEventHandler(eventWriter);
 	}

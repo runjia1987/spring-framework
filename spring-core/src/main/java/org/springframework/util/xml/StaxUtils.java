@@ -263,7 +263,7 @@ public abstract class StaxUtils {
 	 * @since 3.2
 	 */
 	public static XMLStreamWriter createEventStreamWriter(XMLEventWriter eventWriter) {
-		return new XMLEventStreamWriter(eventWriter, XMLEventFactory.newFactory());
+		return new XMLEventStreamWriter(eventWriter, XMLEventFactory.newInstance());
 	}
 
 	/**
